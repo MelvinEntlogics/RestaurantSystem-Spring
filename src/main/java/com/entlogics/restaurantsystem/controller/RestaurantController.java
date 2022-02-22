@@ -44,7 +44,7 @@ public class RestaurantController {
 	@RequestMapping("/restaurants/{restaurant_id}/waiters")
 	public void getAllWaiters(@PathVariable int restaurant_id) {
 		
-		System.out.println("In restaurant controller getWaitersOfARestaurant method, The Restaurant ID provided in path is " + restaurant_id);
+		System.out.println("In restaurant controller getAllWaiters method, The Restaurant ID provided in path is " + restaurant_id);
 		
 	}
 	
@@ -81,9 +81,9 @@ public class RestaurantController {
 
 	// method to show the link dishes form
 	@RequestMapping("/restaurants/{restaurant_id}/link-dish-to-restaurant-form")
-	public void linkDishesToARestaurant(@PathVariable int restaurant_id) {
+	public void linkDishesToARestaurantForm(@PathVariable int restaurant_id) {
 
-		System.out.println("In restaurant controller linkDishToRestaurantForm, The Restaurant ID provided in path is "
+		System.out.println("In restaurant controller linkDishToARestaurantForm method, The Restaurant ID provided in path is "
 				+ restaurant_id);
 
 		// forward the user to the link dishes form
@@ -92,9 +92,9 @@ public class RestaurantController {
 	
 	// method to show the link customers form
 	@RequestMapping("/restaurants/{restaurant_id}/link-customer-to-restaurant-form")
-	public void linkCustomerToARestaurant(@PathVariable int restaurant_id) {
+	public void linkCustomerToARestaurantForm(@PathVariable int restaurant_id) {
 
-		System.out.println("In restaurant controller linkCustomerToRestaurantForm, The Restaurant ID provided in path is "
+		System.out.println("In restaurant controller linkCustomerToARestaurantForm method, The Restaurant ID provided in path is "
 						+ restaurant_id);
 
 		// forward the user to the link customer form
@@ -103,9 +103,9 @@ public class RestaurantController {
 	
 	// method to show the delete form
 		@RequestMapping("/restaurants/{restaurant_id}/showdeleteform")
-		public void showDeleteForm(@PathVariable int restaurant_id) {
+		public void loadRestaurantDeleteForm(@PathVariable int restaurant_id) {
 
-			System.out.println("In restaurant controller showRestaurantDeleteForm, The Restaurant ID provided in path is "
+			System.out.println("In restaurant controller loadRestaurantDeleteForm method, The Restaurant ID provided in path is "
 					+ restaurant_id);
 
 			// forward the user to the delete form
@@ -115,9 +115,9 @@ public class RestaurantController {
 
 	// method to show the edit form
 	@RequestMapping("/restaurants/{restaurant_id}/showeditform")
-	public void showRestaurantEditForm(@PathVariable int restaurant_id) {
+	public void loadRestaurantEditForm(@PathVariable int restaurant_id) {
 
-		System.out.println("In restaurant controller showRestaurantEditForm, The Restaurant ID provided in path is "
+		System.out.println("In restaurant controller loadRestaurantEditForm method, The Restaurant ID provided in path is "
 				+ restaurant_id);
 
 		// forward the user to the edit form
@@ -128,7 +128,7 @@ public class RestaurantController {
 	@RequestMapping("/restaurants/shownewform")
 	public void showRestaurantNewForm() {
 
-		System.out.println("In restaurant controller showRestaurantNewForm");
+		System.out.println("In restaurant controller showRestaurantNewForm method");
 
 		// forward the user to the new form
 	}
